@@ -1,32 +1,46 @@
-# Store Rating Management Application
+# 🌟 Store Rating Management Application
 
-**Output Images**
-![Image](https://drive.google.com/uc?export=view&id=1gN83PuYjssG901odejE2ZT4kZC6bYKGS)
+A full-stack web application for rating stores with user authentication and role-based access. Built using modern technologies and structured for scalability.
 
-![Image 1](https://drive.google.com/uc?export=view&id=1Q3E44C08zGnN90GSvbw13EMcobwDssU7)
-![Image 2](https://drive.google.com/uc?export=view&id=1gUGDziuqRMOXMDVHnJHFrDmjUcZEhJ26)
-![Image 3](https://drive.google.com/uc?export=view&id=1ZB-iqLAqICQtGOixV0nU7mOm0jph__XI)
-![Image 4](https://drive.google.com/uc?export=view&id=1wMV19CPPd6xvWdeBsbaiSER8ctEOuSdJ)
-![Image 5](https://drive.google.com/uc?export=view&id=1aIgA2cncqkpe4LW0lKESU2UWHfevyuF4)
-![Image 6](https://drive.google.com/uc?export=view&id=1vQUNmQ9Pt1x6nVKAHuN2ZzKJuy6F0JT8)
-![Image 7](https://drive.google.com/uc?export=view&id=1DycT1YOi02ei7Zf9qwrK9pdHMPNsiMt3)
-![Image 8](https://drive.google.com/uc?export=view&id=1u9yicZXBLdSgMOb-7unPzBxY9Sbup5gn)
-![Image 9](https://drive.google.com/uc?export=view&id=1VfgExUJvZiJyviDxPNHkFnsl9RqawluV)
-![Image 10](https://drive.google.com/uc?export=view&id=14uqT9ghWZkfzbb8smjI2Zv3mB6ZJLAL6)
+---
 
+## 📸 Output Screenshots
+
+<details>
+  <summary>Click to expand screenshots</summary>
+
+  ![Main View](https://drive.google.com/uc?export=view&id=1gN83PuYjssG901odejE2ZT4kZC6bYKGS)
+
+  ![Image 1](https://drive.google.com/uc?export=view&id=1Q3E44C08zGnN90GSvbw13EMcobwDssU7)
+  ![Image 2](https://drive.google.com/uc?export=view&id=1gUGDziuqRMOXMDVHnJHFrDmjUcZEhJ26)
+  ![Image 3](https://drive.google.com/uc?export=view&id=1ZB-iqLAqICQtGOixV0nU7mOm0jph__XI)
+  ![Image 4](https://drive.google.com/uc?export=view&id=1wMV19CPPd6xvWdeBsbaiSER8ctEOuSdJ)
+  ![Image 5](https://drive.google.com/uc?export=view&id=1aIgA2cncqkpe4LW0lKESU2UWHfevyuF4)
+  ![Image 6](https://drive.google.com/uc?export=view&id=1vQUNmQ9Pt1x6nVKAHuN2ZzKJuy6F0JT8)
+  ![Image 7](https://drive.google.com/uc?export=view&id=1DycT1YOi02ei7Zf9qwrK9pdHMPNsiMt3)
+  ![Image 8](https://drive.google.com/uc?export=view&id=1u9yicZXBLdSgMOb-7unPzBxY9Sbup5gn)
+  ![Image 9](https://drive.google.com/uc?export=view&id=1VfgExUJvZiJyviDxPNHkFnsl9RqawluV)
+  ![Image 10](https://drive.google.com/uc?export=view&id=14uqT9ghWZkfzbb8smjI2Zv3mB6ZJLAL6)
+
+</details>
+
+---
 
 ## 🚀 Overview
-A web application that enables users to submit and manage ratings for stores registered on the platform. It features role-based access for different types of users.
 
-## 🛠️ Technology Stack
+A web platform allowing users to rate stores, managed through a role-based system. Ideal for platforms where customer feedback is crucial.
 
-- **Backend**: ExpressJs / Loopback / NestJs (Choose one)
+---
+
+## 🛠️ Tech Stack
+
+- **Backend**: Express.js / Loopback / NestJS (pick one)
+- **Frontend**: React.js
 - **Database**: PostgreSQL / MySQL
-- **Frontend**: ReactJs
 
-## 🎯 Functional Requirements
+---
 
-### 🌟 User Roles
+## 👥 User Roles
 
 - **System Administrator**
 - **Normal User**
@@ -34,65 +48,73 @@ A web application that enables users to submit and manage ratings for stores reg
 
 ---
 
-## 🔐 Single Authentication System
-- A unified login and registration system for all users.
+## 🔐 Authentication
 
-## 🔑 User Roles & Functionalities
+A unified login and registration system for all roles.
 
-### **System Administrator**
-- Add new stores, normal users, and admin users.
-- Dashboard displaying:
-  - Total number of users
-  - Total number of stores
-  - Total number of submitted ratings
-- Manage users (create, list, filter, view details).
-- Manage stores (list with details).
-- Logout functionality.
+---
 
-### **Normal User**
-- Signup and login functionality.
-- View and search store listings by name or address.
-- Submit and modify store ratings (1-5).
-- Update their password after login.
-- Logout functionality.
+## 🧰 Functional Features
 
-### **Store Owner**
-- Login and update their password.
+### 👨‍💼 System Administrator
+- Add stores, users, and admin users
+- Dashboard with user/store/rating stats
+- User management (create, list, filter, view)
+- Store management with detail view
+- Logout
+
+### 👤 Normal User
+- Register & login
+- View/search stores by name/address
+- Submit and modify ratings (1 to 5)
+- Update password
+- Logout
+
+### 🏪 Store Owner
+- Login & password update
 - Dashboard to view:
-  - List of users who rated their store.
-  - Average rating of their store.
-- Logout functionality.
+  - User list who rated their store
+  - Average rating
+- Logout
 
-## ✔️ Form Validations
-- **Name**: Min 20 characters, Max 60 characters
-- **Address**: Max 400 characters
-- **Password**: 8-16 characters, at least one uppercase letter, one special character
-- **Email**: Standard email format validation
+---
+
+## 📝 Form Validations
+
+- **Name**: 20–60 characters
+- **Address**: up to 400 characters
+- **Password**: 8–16 characters, must include one uppercase & one special character
+- **Email**: standard email format
+
+---
 
 ## 🔍 Additional Features
-- Sorting (ascending/descending) in tables by fields like Name, Email, etc.
-- Clean and best-practice-oriented database schema.
 
-## 🚀 Getting Started
+- Table sorting (ascending/descending) on fields (e.g., name, email)
+- Clean and optimized database schema
 
-### **1. Backend Setup**
+---
 
-Navigate to your backend directory:
+## ⚙️ Getting Started
 
-```sh
-cd server
-npm install
-```
+### 📦 Backend Setup
+
+1. Navigate to backend folder:
+
+   ```bash
+   cd server
+   npm install
+
 
 Configure your database connection in `.env` file:
 
 ```env
-DATABASE_URL=postgresql://username:password@localhost:5432/your-database-name
-```
+DATABASE_URL=postgresql://username:password@localhost:5432/db-name
 
+```
 Then start backend:
 
-```sh
+```
 npm run dev
 ```
 
@@ -101,8 +123,8 @@ Backend runs at `http://localhost:3000`
 For using super admin use these 
 
 ```
-admin@example.com
-Admin123!
+Email: admin@example.com  
+Password: Admin123!
 ```
 
 ## ⚠️ **Important**
@@ -117,18 +139,13 @@ DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/your-database-nam
 ---
 
 
+🤝 Contributing
+Have suggestions or found issues?
+Feel free to open a pull request or raise an issue!
 
 
-## 📬 Contributing
+🙌 Credits
+Made with ❤️ by Prajwal
 
-Feel free to contribute or raise issues through pull requests.
 
-## 📝 License
-
-Specify clearly here if needed (MIT, etc.)
-
----
-
-Made with ❤️ by [Manish](https://github.com/manish-87)
-```
 
